@@ -63,3 +63,26 @@ body {
   -ms-transition: opacity 0.3s ease-in 0.4s;
   -o-transition: opacity 0.3s ease-in 0.4s;
 }
+@media (max-width: 700px) {
+  *{
+    overflow: hidden;
+    scroll-margin: 0;
+  }
+  .container{
+    padding: 0 20px;
+    margin: 0;
+    height: 100vh; 
+  }
+  .slide{
+    height: 50vh;
+    margin-top: 50%;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .slide.active{
+    flex: 5;
+  }
+  .slide h3{
+    font-size: 18px;
+  }
+}
